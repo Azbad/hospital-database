@@ -7,6 +7,7 @@ DROP TABLE IF EXISTS Departments CASCADE;
 CREATE TABLE Departments(
     department_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
     department_name VARCHAR(100) NOT NULL,
+    department_description VARCHAR (100) NOT NULL,
     head_of_departments_id INT
 );
 CREATE TABLE Doctors(
